@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
 *🗎 Filesize:* ${video.fileSizeH}
 `.trim(), m, false, {
     ..._thumb,
-    asDocument: true
+    asDocument: 0
   })
 }
 handler.help = ['mp4', 'v', ''].map(v => 'yt' + v + ` <url> <without message>`)
